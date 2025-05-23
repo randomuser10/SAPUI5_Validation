@@ -9,7 +9,7 @@ sap.ui.define([
         onSubmit(){
             // checking the mandatory field
             var emp = this.getView().byId("idIpEmpId").getValue();
-            var regExp = /^[0-9]+$/
+            var regExp = /^[a-z A-Z 0-9]+$/
             if (emp === "") {
                 this.getView().byId("idIpEmpId").setValueState("Error");
                 this.getView().byId("idIpEmpId").setValueStateText("Employee ID is mandatory please fill it");
