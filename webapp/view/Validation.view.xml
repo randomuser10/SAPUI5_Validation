@@ -1,0 +1,26 @@
+<mvc:View controllerName="apple.project1.controller.Validation"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" xmlns:form="sap.ui.layout.form">
+    <Page id="page" title="Validation" titleAlignment="Center">
+        <content>
+            <Panel id="idPan1">
+                <form:SimpleForm id="idSF1" title="Check Validations" layout="ResponsiveGridLayout"
+                labelSpanL="2" labelSpanM="2" emptySpanL="4" emptySpanM="4">
+                    <form:content>
+                        <Label id="idLEmpId" text="Employee Id" required="true" 
+                               class="sapUiTinyMarginTop"></Label>
+                        <Input id="idIpEmpId"></Input>
+                    </form:content>
+                </form:SimpleForm>
+            </Panel>
+        </content>
+        <footer>
+            <Bar id="idBar1" >
+                <contentRight>
+                    <Button id="idBtn1" text="Submit" press="onSubmit" type="Emphasized"></Button>
+                </contentRight>
+            </Bar>
+            <!--  -->
+        </footer>
+    </Page>
+</mvc:View>
